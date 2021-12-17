@@ -1,0 +1,32 @@
+\documentclass[]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[german]{babel}
+\title{Protokoll - Update Trendschätzung DAS-Monitoring}
+\author{Sven Morlock, Tim Bauroth, Xianjang Cheng}
+\date{\today}
+%\vspace*{1in}
+\begin{document}
+\maketitle
+
+Die Teilnehmer haben sich auf die folgende Vorgehensweise festgelegt. Diese gliedert sich in drei Teile. \newline
+
+1. Automatisiertes Einlesen der Daten: \newline
+
+Die Projektgruppe wird untersuchen inwiefern eine automatisierte Umsetzung der Logarithmierung der Inputdateien notwendig bzw. möglich ist.\newline
+
+2. Trendschätzung durch nicht parametrische Verfahren:\newline 
+
+Es wurden mehrere Verfahren betrachtet und drei vielversprechende nicht parametrische Ansätze ausgewählt. Diese werden nun anhand der vorliegenden Indikatordaten umgesetzt und anschließend miteinander verglichen. Dabei werden insbesondere die Ergebnisse des historischen Trendschätzungsverfahrens einbezogen.\newline
+
+2.1 Mann-Kendall: \newline 
+
+Durch die Verwendung eines internen Rankings bietet dieser Testansatz eine möglicherweise robustere Auswertung extremer Zeitreihen. Er wird häufig zur Trendanalyse von Wetterdaten verwendet.\newline
+
+2.2 Splines: \newline
+
+ 3. Umgang mit Extremwerten: \newline 
+ 
+ Die Vorliegenden Daten weisen teilweise extreme Werte auf, die besonders bei der Beurteilung einer Trendumkehr (quadratischer Trend) für Verwerfungen sorgen können. Aus diesem Grund werden wir Verfahren Glättung dieser Extremwerte untersuchen. Die Auswahl des Mann-Kendall Tests bietet dabei ohnehin bereits eine gute Möglichkeit mit auftretenden Extremwerten umzugehen, sodass wir uns auf die Extremwertproblematik im Rahmen des Spline Ansatzes fokussieren können.
+ 
+
+\end{document}
